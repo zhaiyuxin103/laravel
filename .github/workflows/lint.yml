@@ -36,7 +36,7 @@ jobs:
       - name: Run Pint
         run: vendor/bin/pint
 
-      - name: Run Frontend Formatting
+      - name: Format Frontend
         run: npm run format
 
       - name: Commit Changes

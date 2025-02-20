@@ -4,9 +4,9 @@
 
 Our Laravel + [Livewire](https://livewire.laravel.com) starter kit provides a robust, modern starting point for building Laravel applications with a Livewire frontend.
 
-Inertia allows you to build modern, single-page Livewire applications using classic server-side routing and controllers. This lets you enjoy the frontend power of Livewire combined with the incredible backend productivity of Laravel and lightning-fast Vite compilation.
+Livewire is a powerful way of building dynamic, reactive, frontend UIs using just PHP. It's a great fit for teams that primarily use Blade templates and are looking for a simpler alternative to JavaScript-driven SPA frameworks like React and Vue.
 
-This Livewire starter kit utilizes Livewire 3 and the Composition API, TypeScript, Tailwind, and the [shadcn-Livewire](https://www.shadcn-Livewire.com) component library.
+This Livewire starter kit utilizes Livewire 3, Laravel Volt, TypeScript, Tailwind, and the [Flux UI](https://fluxui.dev) component library.
 
 ## Official Documentation
 

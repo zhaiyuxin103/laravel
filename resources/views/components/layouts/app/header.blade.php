@@ -39,17 +39,10 @@
 
             <!-- Desktop User Menu -->
             <flux:dropdown position="top" align="end">
-                <flux:profile initials="{{ auth()->user()->initials() }}" icon-trailing="chevron-down">
-                    <div class="flex items-center gap-2 px-1 py-1.5 text-left text-sm">
-                        <span class="relative flex h-8 w-8 shrink-0 overflow-hidden rounded-lg">
-                            <span
-                                class="flex h-full w-full items-center justify-center rounded-lg bg-neutral-200 text-black dark:bg-neutral-700 dark:text-white"
-                            >
-                                {{ auth()->user()->initials() }}
-                            </span>
-                        </span>
-                    </div>
-                </flux:profile>
+                <flux:profile
+                    :initials="auth()->user()->initials()"
+                    icon-trailing="chevron-down"
+                />
 
                 <flux:menu>
                     <flux:menu.radio.group>

@@ -23,11 +23,13 @@
                 <flux:navlist.item icon="folder-git-2" href="https://github.com/laravel/livewire-starter-kit" target="_blank">
                     Repository
                 </flux:navlist.item>
+
                 <flux:navlist.item icon="book-open-text" href="https://laravel.com/docs/starter-kits" target="_blank">
                     Documentation
                 </flux:navlist.item>
             </flux:navlist>
 
+            <!-- Desktop User Menu -->
             <flux:dropdown position="bottom" align="start">
                 <flux:profile
                     initials="{{ auth()->user()->initials() }}"
@@ -56,6 +58,7 @@
                                         {{ auth()->user()->initials() }}
                                     </span>
                                 </span>
+
                                 <div class="grid flex-1 text-left text-sm leading-tight">
                                     <span class="truncate font-semibold">{{ auth()->user()->name }}</span>
                                     <span class="truncate text-xs">{{ auth()->user()->email }}</span>
@@ -63,7 +66,9 @@
                             </div>
                         </div>
                     </flux:menu.radio.group>
+
                     <flux:menu.separator />
+
                     <flux:menu.radio.group>
                         <flux:menu.item href="/settings/profile" icon="cog">Settings</flux:menu.item>
                     </flux:menu.radio.group>
@@ -80,6 +85,7 @@
             </flux:dropdown>
         </flux:sidebar>
 
+        <!-- Mobile User Menu -->
         <flux:header class="lg:hidden">
             <flux:sidebar.toggle class="lg:hidden" icon="bars-2" inset="left" />
 
@@ -109,6 +115,7 @@
                                         {{ auth()->user()->initials() }}
                                     </span>
                                 </span>
+
                                 <div class="grid flex-1 text-left text-sm leading-tight">
                                     <span class="truncate font-semibold">{{ auth()->user()->name }}</span>
                                     <span class="truncate text-xs">{{ auth()->user()->email }}</span>
@@ -116,7 +123,9 @@
                             </div>
                         </div>
                     </flux:menu.radio.group>
+
                     <flux:menu.separator />
+
                     <flux:menu.radio.group>
                         <flux:menu.item href="/settings/profile" icon="cog">Settings</flux:menu.item>
                     </flux:menu.radio.group>

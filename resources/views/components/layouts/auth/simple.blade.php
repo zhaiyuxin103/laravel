@@ -10,6 +10,7 @@
                     <span class="flex h-10 w-10 items-center justify-center rounded-md">
                         <x-app-logo-icon class="size-10 fill-current text-black dark:text-white" />
                     </span>
+
                     <span class="sr-only">{{ config('app.name', 'Laravel') }}</span>
                 </a>
                 <div class="flex flex-col gap-6">

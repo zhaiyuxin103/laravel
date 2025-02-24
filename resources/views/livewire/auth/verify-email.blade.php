@@ -35,12 +35,12 @@ new #[Layout('components.layouts.auth')] class extends Component {
 }; ?>
 
 <div class="mt-4 flex flex-col gap-6">
-    <div class="text-sm text-gray-600">
+    <div class="text-center text-sm text-gray-600">
         {{ __('Please verify your email address by clicking on the link we just emailed to you.') }}
     </div>
 
     @if (session('status') == 'verification-link-sent')
-        <div class="text-sm font-medium text-green-600">
+        <div class="font-medium text-center text-sm text-green-600">
             {{ __('A new verification link has been sent to the email address you provided during registration.') }}
         </div>
     @endif
